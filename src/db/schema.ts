@@ -25,6 +25,7 @@ export const stores = pgTable(
         phone: text('phone').notNull(),
         imageUrl: text('imageUrl').array().notNull(),
         taxRate: text('taxRate').notNull().default('0.0'),
+        createdAt: timestamp('createdAt').defaultNow().notNull(),
     },
     (table) => {
         return {
