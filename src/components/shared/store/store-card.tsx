@@ -2,8 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { Store } from '@/types'
 
-const StoreCard = ({ store }: { store: any }) => {
+const StoreCard = ({ store }: { store: Store }) => {
 
     return (
         <Card className="w-full max-w-sm">

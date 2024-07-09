@@ -7,7 +7,7 @@ const StoreList = ({ data }: { data: any }) => {
             {data.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {data.map((store: any) => (
-                        <StoreCard key={store.StoreID} store={store} />
+                        <StoreCard key={store.id} store={store} />
                     ))}
                 </div>
             ) : (
